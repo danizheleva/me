@@ -1,41 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Route, Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import CardComponent from './components/CardComponent.js'
-import cooking from './images/homepage/cooking.jpg'
-import pole from './images/homepage/pole.png'
-import baking from './images/homepage/baking.jpg'
+import Home from './pages/Home.js'
 
-function App() {
-  return (
-    <div className="App">
-      <div className="container">
-        <div className="row m-4">
-          <div className="col-lg-4">
-            <CardComponent 
-              title="Baking" 
-              img={baking} 
-              description="Collection of things I have baked, includign recipes"
-            />
-          </div>
-          <div className="col-lg-4">
-          <CardComponent 
-              title="Cooking" 
-              img={cooking} 
-              description="Collection of meals I have cooked, includign recipes"
-            />
-          </div>
-          <div className="col-lg-4">
-          <CardComponent 
-              title="Pole Dancing" 
-              img={pole} 
-              description="Progress in pole dancing"
-            />
-          </div>
-        </div>
+const Baking = () => (
+  <div>
+    <p> Hello world</p>
+  </div>
+)
+
+class App extends Component {
+  
+  render() {
+    return (
+      <div>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/baking' component={Baking} />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
