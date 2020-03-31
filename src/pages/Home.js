@@ -17,7 +17,6 @@ function Home() {
               <CardComponent 
                 title="Thing's I've Baked" 
                 img={baking} 
-                onClick={() => alert("card click worked")}
               />
             </Link>
           </div>

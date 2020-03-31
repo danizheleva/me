@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-class CardComponent extends React.Component {
+class CardComponent extends React.Component { 
     render() {
         return (
             <Card style={{height: '100%', width:'100%'}}>
@@ -11,7 +11,7 @@ class CardComponent extends React.Component {
                 </Card.Body>
             </Card>
         )
-}
+    }
 }
 
 export default CardComponent;

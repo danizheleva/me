@@ -1,9 +1,28 @@
 import React from 'react';
 import '../App.css';
-import CardComponent from '../components/CardComponent.js';
+import {CardComponent, RecipeDetails} from '../components';
 import {DATA_BAKING} from '../data';
+import ReactModal from 'react-modal';
 
 class Baking extends React.Component {
+
+    constructor(){
+        super();
+        this.state = {
+            showModal:false
+        };
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+    };
+
+    handleOpenModal () {
+        this.setState({ showModal: true });
+    };
+
+    handleCloseModal () {
+        this.setState({ showModal: false });
+    };
+    
     render() {
         var bakes = DATA_BAKING;
         return (
@@ -14,10 +33,20 @@ class Baking extends React.Component {
                             Object.keys(bakes).map((object, i) => {
                                 return ( 
                                     <div className="col-md-4">
-                                        <CardComponent 
-                                            title={bakes[object].title} 
-                                            img={bakes[object].image} 
-                                        />
+                                        <div onClick={this.handleOpenModal}>
+                                            <CardComponent 
+                                                title={bakes[object].title} 
+                                                img={bakes[object].image} 
+                                            />
+                                        </div>
+                                        <ReactModal
+                                            isOpen={this.state.showModal}
+                                            contentLabel="test">
+                                                <RecipeDetails 
+                                                    title={bakes[object].title} 
+                                                />
+                                            <button onClick={this.handleCloseModal}>Close Modal</button>
+                                        </ReactModal>
                                     </div>
                                 )
                             })
@@ -28,5 +57,7 @@ class Baking extends React.Component {
     )
     }
 }
+
+
 
 export default Baking;
