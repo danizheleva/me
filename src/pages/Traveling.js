@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-class Cooking extends React.Component {
+class Traveling extends React.Component {
     render() {
         return (
             <div className="App">
@@ -17,4 +17,4 @@ class Cooking extends React.Component {
     }
 }
 
-export default Cooking;
+export default Traveling;

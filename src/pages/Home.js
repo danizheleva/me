@@ -22,16 +22,20 @@ function Home() {
             </Link>
           </div>
           <div className="col-lg-4">
-          <CardComponent 
-              title="Meals I've cooked" 
-              img={cooking} 
-            />
+            <Link to="/cooking">
+              <CardComponent 
+                  title="Meals I've cooked" 
+                  img={cooking} 
+                />
+            </Link>
           </div>
           <div className="col-lg-4">
-          <CardComponent 
-              title="Places I've Been" 
-              img={travel} 
-            />
+            <Link to="/traveling">
+              <CardComponent 
+                  title="Places I've Been" 
+                  img={travel} 
+                />
+            </Link>
           </div>
         </div>
       </div>

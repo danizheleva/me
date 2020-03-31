@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './pages/Home.js';
 import Baking from './pages/Baking.js';
+import Cooking from './pages/Cooking.js';
+import Traveling from './pages/Traveling.js';
 
 class App extends Component {
   
@@ -12,8 +14,8 @@ class App extends Component {
       <div>
         <Route exact path='/' component={Home} />
         <Route exact path='/baking' component={Baking} />
-        <Route exact path='/cooking' component={Baking} />
-        <Route exact path='/traveling' component={Baking} />
+        <Route exact path='/cooking' component={Cooking} />
+        <Route exact path='/traveling' component={Traveling} />
       </div>
     );
   }
