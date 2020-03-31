@@ -9,14 +9,20 @@ class Baking extends React.Component {
     constructor(){
         super();
         this.state = {
-            showModal:false
+            showModal:false,
+            recipeTitle: "",
+            recipeImage: ""
         };
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
     };
 
-    handleOpenModal () {
-        this.setState({ showModal: true });
+    handleOpenModal (bakingObject) {
+        this.setState({ 
+            showModal: true,
+            recipeTitle: bakingObject.title,
+            recipeImage: bakingObject.image
+        });
     };
 
     handleCloseModal () {
@@ -33,7 +39,7 @@ class Baking extends React.Component {
                             Object.keys(bakes).map((object, i) => {
                                 return ( 
                                     <div className="col-md-4">
-                                        <div onClick={this.handleOpenModal}>
+                                        <div onClick={() => this.handleOpenModal(bakes[object])}>
                                             <CardComponent 
                                                 title={bakes[object].title} 
                                                 img={bakes[object].image} 
@@ -43,7 +49,7 @@ class Baking extends React.Component {
                                             isOpen={this.state.showModal}
                                             contentLabel="test">
                                                 <RecipeDetails 
-                                                    title={bakes[object].title} 
+                                                    title={this.state.recipeTitle} 
                                                 />
                                             <button onClick={this.handleCloseModal}>Close Modal</button>
                                         </ReactModal>

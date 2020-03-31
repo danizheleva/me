@@ -27,6 +27,7 @@
 - [x] Seperate data into its own folder rather than hardcoding in the page
 - [ ] How to loop through all items in data/baking and display on page as card?
 - [ ] Capitalise titles
+- [ ] Refactor baking page
 
 ### Features
 - [ ] How to display details? pop up card or new page? Probably pop up
