@@ -6,5 +6,7 @@ export default {
     LITRE: "L",
 
     TEASPOON: "tsp",
-    TABLESPOON: "tbsp"
+    TABLESPOON: "tbsp",
+
+    IETM: "item"
 }

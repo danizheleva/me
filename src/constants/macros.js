@@ -8,5 +8,6 @@ export default {
     FATS: measurements.GRAM,
     SATURATES: measurements.GRAM,
     SUGARS: measurements.GRAM,
-    SALT: measurements.MILIGRAM
+    SALT: measurements.MILIGRAM,
+    FIBRE: measurements.GRAM
 }

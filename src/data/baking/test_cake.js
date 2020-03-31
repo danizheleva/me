@@ -9,8 +9,10 @@ const INGREDIENTS = [
 ]
 
 export default {
-    title: "test cake",
-    ingredients: INGREDIENTS,
-    method: "TODO",
-    image: "https://tse1.mm.bing.net/th?id=OIP.jSC5QOtK3DFz94L3386GAQHaEK&pid=Api"
+    TEST: {
+        title: "test cake",
+        ingredients: INGREDIENTS,
+        method: "TODO",
+        image: "https://tse1.mm.bing.net/th?id=OIP.jSC5QOtK3DFz94L3386GAQHaEK&pid=Api"
+    }
 }

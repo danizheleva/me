@@ -26,6 +26,11 @@
 ### To Improve
 - [x] Seperate data into its own folder rather than hardcoding in the page
 - [ ] How to loop through all items in data/baking and display on page as card?
+- [ ] Capitalise titles
 
 ### Features
 - [ ] How to display details? pop up card or new page? Probably pop up
+- [ ] Calculate nutrition per recipe/bake item
+- [ ] Handle multiple images per entry (only one on home page to start, maybe flickable after)
+- [ ] Add method to recipes
+- [ ] Display recipe details

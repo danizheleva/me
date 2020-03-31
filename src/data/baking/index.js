@@ -1,5 +1,7 @@
-import test_cake from "./test_cake";
+import TEST from "./test_cake";
+import BREAD_BUTTER_PUDDING from './BREAD_BUTTER_PUDDING';
 
 export default {
-    ...test_cake
+    ...TEST,
+    ...BREAD_BUTTER_PUDDING
 }
