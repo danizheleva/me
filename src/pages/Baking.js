@@ -4,24 +4,25 @@ import {CardComponent, RecipeDetails} from '../components';
 import {DATA_BAKING} from '../data';
 import ReactModal from 'react-modal';
 import { ingredients } from '../constants';
+import { Modal, Button } from 'react-bootstrap';
 
 class Baking extends React.Component {
 
     constructor(){
         super();
         this.state = {
-            showModal:false,
+            show: false,
             recipeTitle: "",
             recipeImage: "",
             ingredients: []
         };
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
-    };
+        };
 
     handleOpenModal (bakingObject) {
         this.setState({ 
-            showModal: true,
+            show: true,
             recipeTitle: bakingObject.title,
             recipeImage: bakingObject.image,
             ingredients: bakingObject.ingredients
@@ -29,7 +30,7 @@ class Baking extends React.Component {
     };
 
     handleCloseModal () {
-        this.setState({ showModal: false });
+        this.setState({ show: false });
     };
     
     render() {
@@ -49,16 +50,21 @@ class Baking extends React.Component {
                                                 img={bakes[object].image} 
                                             />
                                         </div>
-                                        <ReactModal
-                                            isOpen={this.state.showModal}
-                                            contentLabel="test">
+
+                                        <Modal dialogClassName="modal-size" show={this.state.show} onHide={() => this.handleOpenModal(bakes[object])}>
+                                            <Modal.Body>
                                                 <RecipeDetails 
                                                     title={this.state.recipeTitle}
                                                     img={this.state.recipeImage}
                                                     ingredients={this.state.ingredients}
                                                 />
-                                            <button onClick={this.handleCloseModal}>Close Modal</button>
-                                        </ReactModal>
+                                            </Modal.Body>
+                                            <Modal.Footer>
+                                                <Button variant="secondary" onClick={this.handleCloseModal}>
+                                                    Close
+                                                </Button>
+                                            </Modal.Footer>
+                                        </Modal>
                                     </div>
                                 )
                             })

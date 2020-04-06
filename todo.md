@@ -28,7 +28,7 @@
 - [x] How to loop through all items in data/baking and display on page as card?
 - [ ] Capitalise titles
 - [ ] Refactor baking page
-- [ ] Decrease size of pop out detail card and keep background as is on main page
+- [x] Decrease size of pop out detail card and keep background as is on main page
 - [ ] Format details page nicely
 - [ ] Optimise for mobile size
 
