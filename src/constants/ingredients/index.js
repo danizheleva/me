@@ -7,6 +7,8 @@ import FRUIT from "./FRUIT";
 import LIQUID from "./LIQUID";
 import SPICES from "./SPICES";
 import SUGAR from "./SUGAR";
+import CHOCOLATE from "./CHOCOLATE";
+import NUTS from "./NUTS";
 
 export default {
         ...BREAD,
@@ -17,5 +19,7 @@ export default {
         ...FRUIT,
         ...LIQUID,
         ...SPICES,
-        ...SUGAR
+        ...SUGAR,
+        ...CHOCOLATE,
+        ...NUTS
 }

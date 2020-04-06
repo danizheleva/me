@@ -3,6 +3,7 @@ import '../App.css';
 import {CardComponent, RecipeDetails} from '../components';
 import {DATA_BAKING} from '../data';
 import ReactModal from 'react-modal';
+import { ingredients } from '../constants';
 
 class Baking extends React.Component {
 
@@ -11,7 +12,8 @@ class Baking extends React.Component {
         this.state = {
             showModal:false,
             recipeTitle: "",
-            recipeImage: ""
+            recipeImage: "",
+            ingredients: []
         };
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -21,7 +23,8 @@ class Baking extends React.Component {
         this.setState({ 
             showModal: true,
             recipeTitle: bakingObject.title,
-            recipeImage: bakingObject.image
+            recipeImage: bakingObject.image,
+            ingredients: bakingObject.ingredients
         });
     };
 
@@ -37,6 +40,7 @@ class Baking extends React.Component {
                     <div className="row m-4">
                         {
                             Object.keys(bakes).map((object, i) => {
+                                {console.log(bakes)}
                                 return ( 
                                     <div className="col-md-4">
                                         <div onClick={() => this.handleOpenModal(bakes[object])}>
@@ -49,7 +53,9 @@ class Baking extends React.Component {
                                             isOpen={this.state.showModal}
                                             contentLabel="test">
                                                 <RecipeDetails 
-                                                    title={this.state.recipeTitle} 
+                                                    title={this.state.recipeTitle}
+                                                    img={this.state.recipeImage}
+                                                    ingredients={this.state.ingredients}
                                                 />
                                             <button onClick={this.handleCloseModal}>Close Modal</button>
                                         </ReactModal>

@@ -19,5 +19,23 @@ export default {
                             {amount: 1.8,   macro: macros.FIBRE}
                         ]
                     }
+    },
+    BANANA: {
+        displayName: "banana",
+        link: "https://www.tesco.com/groceries/en-GB/products/275280804",
+        nutrition: {    quantity: 100, 
+                        measurement: measurements.GRAM, 
+                        macronutrients: [
+                            {amount: 380,   macro: macros.ENERGY},
+                            {amount: 90,    macro: macros.CALORIES},
+                            {amount: 20.3,  macro: macros.CARBS},
+                            {amount: 1.2,   macro: macros.PROTEIN},
+                            {amount: 0.1,   macro: macros.FATS},
+                            {amount: 0,     macro: macros.SATURATES},
+                            {amount: 18.1,  macro: macros.SUGARS},
+                            {amount: 0,     macro: macros.SALT},
+                            {amount: 1.4,   macro: macros.FIBRE}
+                        ]
+                    }
     }
 }
