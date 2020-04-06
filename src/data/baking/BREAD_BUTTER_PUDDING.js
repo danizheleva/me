@@ -54,7 +54,7 @@ export default {
     BREAD_PUDDING: { 
         title: "apple bread and butter pudding",
         ingredients: INGREDIENTS,
-        method: "TODO",
+        method: "",
         image: pic1
     }
 }

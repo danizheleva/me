@@ -14,5 +14,9 @@ export default {
                             {amount: 0.1,   macro: macros.SALT}
                         ]
                     }
-    }
+    },
+    BAKING_POWDER: {
+        displayName: "baking powder"
+    },
+
 }

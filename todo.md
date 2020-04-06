@@ -29,12 +29,12 @@
 - [ ] Capitalise titles
 - [ ] Refactor baking page
 - [x] Decrease size of pop out detail card and keep background as is on main page
-- [ ] Format details page nicely
+- [x] Format details pop up nicely
 - [ ] Optimise for mobile size
 
 ### Features
 - [x] How to display details? pop up card or new page? Probably pop up
 - [ ] Calculate nutrition per recipe/bake item
 - [ ] Handle multiple images per entry (only one on home page to start, maybe flickable after)
-- [ ] Add method to recipes
+- [x] Handle adding method to recipes
 - [x] Display recipe details

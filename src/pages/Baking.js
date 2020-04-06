@@ -2,8 +2,6 @@ import React from 'react';
 import '../App.css';
 import {CardComponent, RecipeDetails} from '../components';
 import {DATA_BAKING} from '../data';
-import ReactModal from 'react-modal';
-import { ingredients } from '../constants';
 import { Modal, Button } from 'react-bootstrap';
 
 class Baking extends React.Component {
@@ -14,7 +12,8 @@ class Baking extends React.Component {
             show: false,
             recipeTitle: "",
             recipeImage: "",
-            ingredients: []
+            ingredients: [],
+            method: []
         };
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -25,7 +24,8 @@ class Baking extends React.Component {
             show: true,
             recipeTitle: bakingObject.title,
             recipeImage: bakingObject.image,
-            ingredients: bakingObject.ingredients
+            ingredients: bakingObject.ingredients,
+            method: bakingObject.method
         });
     };
 
@@ -51,19 +51,17 @@ class Baking extends React.Component {
                                             />
                                         </div>
 
-                                        <Modal dialogClassName="modal-size" show={this.state.show} onHide={() => this.handleOpenModal(bakes[object])}>
+                                        <Modal dialogClassName="modal-size" show={this.state.show} onHide={() => this.handleCloseModal(bakes[object])}>
+                                            <Modal.Header closeButton className="justify-content-center">
+                                                <h1 className="col-11 text-center">{this.state.recipeTitle}</h1>
+                                            </Modal.Header>
                                             <Modal.Body>
                                                 <RecipeDetails 
-                                                    title={this.state.recipeTitle}
                                                     img={this.state.recipeImage}
                                                     ingredients={this.state.ingredients}
+                                                    method={this.state.method}
                                                 />
                                             </Modal.Body>
-                                            <Modal.Footer>
-                                                <Button variant="secondary" onClick={this.handleCloseModal}>
-                                                    Close
-                                                </Button>
-                                            </Modal.Footer>
                                         </Modal>
                                     </div>
                                 )

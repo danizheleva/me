@@ -9,6 +9,7 @@ import SPICES from "./SPICES";
 import SUGAR from "./SUGAR";
 import CHOCOLATE from "./CHOCOLATE";
 import NUTS from "./NUTS";
+import FLAVOURING from "./FLAVOURING";
 
 export default {
         ...BREAD,
@@ -21,5 +22,6 @@ export default {
         ...SPICES,
         ...SUGAR,
         ...CHOCOLATE,
-        ...NUTS
+        ...NUTS,
+        ...FLAVOURING
 }
