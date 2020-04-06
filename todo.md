@@ -25,13 +25,16 @@
 
 ### To Improve
 - [x] Seperate data into its own folder rather than hardcoding in the page
-- [ ] How to loop through all items in data/baking and display on page as card?
+- [x] How to loop through all items in data/baking and display on page as card?
 - [ ] Capitalise titles
 - [ ] Refactor baking page
+- [ ] Decrease size of pop out detail card and keep background as is on main page
+- [ ] Format details page nicely
+- [ ] Optimise for mobile size
 
 ### Features
-- [ ] How to display details? pop up card or new page? Probably pop up
+- [x] How to display details? pop up card or new page? Probably pop up
 - [ ] Calculate nutrition per recipe/bake item
 - [ ] Handle multiple images per entry (only one on home page to start, maybe flickable after)
 - [ ] Add method to recipes
-- [ ] Display recipe details
+- [x] Display recipe details
