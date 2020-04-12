@@ -38,17 +38,24 @@ class Baking extends React.Component {
         return (
             <div className="App">
                 <div className="container">
-                    <div className="row m-4">
+                    <div className="gallery">
                         {
                             Object.keys(bakes).map((object, i) => {
                                 {console.log(bakes)}
                                 return ( 
-                                    <div className="col-md-4">
+                                    <div className="col-4 gallery-item img-responsive">
                                         <div onClick={() => this.handleOpenModal(bakes[object])}>
-                                            <CardComponent 
-                                                title={bakes[object].title} 
-                                                img={bakes[object].image} 
-                                            />
+                                        <img className="gallery-image" src={bakes[object].image} />
+                                            
+                                            <div class="gallery-item-info">
+                                                <ul>
+                                                    <li class="gallery-item-title">
+                                                        <span class="visually-hidden" style={{textTransform: 'capitalize'}}>
+                                                            {bakes[object].title}
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
 
                                         <Modal dialogClassName="modal-size" show={this.state.show} onHide={() => this.handleCloseModal(bakes[object])}>

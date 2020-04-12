@@ -6,14 +6,15 @@
 - [ ] Orange Sponge cake
 - [ ] Orange sponge cake balls
 - [ ] Pastel de Natas
-- [ ] Bread and Butter pudding
+- [x] Bread and Butter pudding
 - [ ] millionaire short bread
 - [ ] NY style cheesecake
+- [ ] Peanut butter and chocolate chip cookies
 
 ### Cooking recipes
 - [ ] Salmon with Red Cabbage and Mash
 - [ ] Veggie Mousaka
-- [ ] Mornign Eggs
+- [ ] Morning Eggs
 - [ ] Kimchi
 
 ### Places I have been and blogs
@@ -26,8 +27,8 @@
 ### To Improve
 - [x] Seperate data into its own folder rather than hardcoding in the page
 - [x] How to loop through all items in data/baking and display on page as card?
-- [ ] Capitalise titles
-- [ ] Refactor baking page
+- [ ] Capitalise title consistantly
+- [x] Refactor baking page
 - [x] Decrease size of pop out detail card and keep background as is on main page
 - [x] Format details pop up nicely
 - [ ] Optimise for mobile size
@@ -38,3 +39,4 @@
 - [ ] Handle multiple images per entry (only one on home page to start, maybe flickable after)
 - [x] Handle adding method to recipes
 - [x] Display recipe details
+- [ ] Nav bar to home page
