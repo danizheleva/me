@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
-import {CardComponent, RecipeDetails} from '../components';
+import { CapitalisedTitle, RecipeDetails} from '../components';
 import {DATA_BAKING} from '../data';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
 class Baking extends React.Component {
 
@@ -50,8 +50,11 @@ class Baking extends React.Component {
                                             <div class="gallery-item-info">
                                                 <ul>
                                                     <li class="gallery-item-title">
-                                                        <span class="visually-hidden" style={{textTransform: 'capitalize'}}>
-                                                            {bakes[object].title}
+                                                        <span class="visually-hidden" >
+                                                            <CapitalisedTitle
+                                                                size={2}
+                                                                title={bakes[object].title}
+                                                            />
                                                         </span>
                                                     </li>
                                                 </ul>
@@ -59,8 +62,13 @@ class Baking extends React.Component {
                                         </div>
 
                                         <Modal dialogClassName="modal-size" show={this.state.show} onHide={() => this.handleCloseModal(bakes[object])}>
-                                            <Modal.Header closeButton className="justify-content-center">
-                                                <h1 className="col-11 text-center">{this.state.recipeTitle}</h1>
+                                            <Modal.Header closeButton className="d-flex justify-content-center">
+                                                <div className="col-11 text-center" >
+                                                    <CapitalisedTitle
+                                                        size={1}
+                                                        title={this.state.recipeTitle}
+                                                    />
+                                                </div>
                                             </Modal.Header>
                                             <Modal.Body>
                                                 <RecipeDetails 

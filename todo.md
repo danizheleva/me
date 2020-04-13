@@ -9,7 +9,7 @@
 - [x] Bread and Butter pudding
 - [ ] millionaire short bread
 - [ ] NY style cheesecake
-- [ ] Peanut butter and chocolate chip cookies
+- [x] Peanut butter and chocolate chip cookies
 
 ### Cooking recipes
 - [ ] Salmon with Red Cabbage and Mash
@@ -27,7 +27,7 @@
 ### To Improve
 - [x] Seperate data into its own folder rather than hardcoding in the page
 - [x] How to loop through all items in data/baking and display on page as card?
-- [ ] Capitalise title consistantly
+- [x] Capitalise title consistantly
 - [x] Refactor baking page
 - [x] Decrease size of pop out detail card and keep background as is on main page
 - [x] Format details pop up nicely
