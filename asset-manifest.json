@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.2c0c9adb.chunk.css",
-    "main.js": "/me/static/js/main.7f5d7251.chunk.js",
-    "main.js.map": "/me/static/js/main.7f5d7251.chunk.js.map",
+    "main.css": "/me/static/css/main.9a251095.chunk.css",
+    "main.js": "/me/static/js/main.97ffd558.chunk.js",
+    "main.js.map": "/me/static/js/main.97ffd558.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.66f66336.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.66f66336.js.map",
     "static/css/2.de424728.chunk.css": "/me/static/css/2.de424728.chunk.css",
-    "static/js/2.fd134f3d.chunk.js": "/me/static/js/2.fd134f3d.chunk.js",
-    "static/js/2.fd134f3d.chunk.js.map": "/me/static/js/2.fd134f3d.chunk.js.map",
+    "static/js/2.c38fddd5.chunk.js": "/me/static/js/2.c38fddd5.chunk.js",
+    "static/js/2.c38fddd5.chunk.js.map": "/me/static/js/2.c38fddd5.chunk.js.map",
     "index.html": "/me/index.html",
-    "precache-manifest.ebf2eeb9754952d9d001cd51d4b0daef.js": "/me/precache-manifest.ebf2eeb9754952d9d001cd51d4b0daef.js",
+    "precache-manifest.dd4f4e3dab3b85a90c2b40ba6cb22772.js": "/me/precache-manifest.dd4f4e3dab3b85a90c2b40ba6cb22772.js",
     "service-worker.js": "/me/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/me/static/css/2.de424728.chunk.css.map",
-    "static/css/main.2c0c9adb.chunk.css.map": "/me/static/css/main.2c0c9adb.chunk.css.map",
-    "static/js/2.fd134f3d.chunk.js.LICENSE.txt": "/me/static/js/2.fd134f3d.chunk.js.LICENSE.txt",
+    "static/css/main.9a251095.chunk.css.map": "/me/static/css/main.9a251095.chunk.css.map",
+    "static/js/2.c38fddd5.chunk.js.LICENSE.txt": "/me/static/js/2.c38fddd5.chunk.js.LICENSE.txt",
     "static/media/baking.jpg": "/me/static/media/baking.45bdea72.jpg",
     "static/media/banana_bread_2.jpg": "/me/static/media/banana_bread_2.8a8dba26.jpg",
     "static/media/bread_butter_pudding_whole.jpg": "/me/static/media/bread_butter_pudding_whole.9cf5d08d.jpg",
     "static/media/cooking.jpg": "/me/static/media/cooking.83512bcd.jpg",
     "static/media/millionaire_shortbread_full.jpg": "/me/static/media/millionaire_shortbread_full.dbe79c68.jpg",
+    "static/media/peanut_butter_cookies.jpg": "/me/static/media/peanut_butter_cookies.82f05fc1.jpg",
     "static/media/travel.jpeg": "/me/static/media/travel.1d3cf563.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.66f66336.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.fd134f3d.chunk.js",
-    "static/css/main.2c0c9adb.chunk.css",
-    "static/js/main.7f5d7251.chunk.js"
+    "static/js/2.c38fddd5.chunk.js",
+    "static/css/main.9a251095.chunk.css",
+    "static/js/main.97ffd558.chunk.js"
   ]
 }
