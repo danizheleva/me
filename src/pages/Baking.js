@@ -63,7 +63,7 @@ class Baking extends React.Component {
 
                                         <Modal dialogClassName="modal-size" show={this.state.show} onHide={() => this.handleCloseModal(bakes[object])}>
                                             <Modal.Header closeButton className="d-flex justify-content-center">
-                                                <div className="col-11 text-center" >
+                                                <div className="col-11 text-center baking-detail-title" >
                                                     <CapitalisedTitle
                                                         size={1}
                                                         title={this.state.recipeTitle}

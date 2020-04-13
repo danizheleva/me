@@ -8,8 +8,8 @@ class RecipeDetails extends React.Component {
         return (
             <div>
                 <div className="row justify-content-center mt-3">
-                    <div className="col-3">
-                        <h3 className="text-center">Ingredients</h3>
+                    <div className="col-md-3 col-sm-12 text-center">
+                        <h3>Ingredients</h3>
                         <ul className="list-unstyled">
                             {Object.keys(ingredients).map((number, i) => {
                                 return(
@@ -19,7 +19,7 @@ class RecipeDetails extends React.Component {
                             }
                         </ul>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6 col-sm-12">
                     <h3 className="text-center">Method</h3>
                         <ol>
                             {Object.keys(method).map((number, i) => {
@@ -30,9 +30,11 @@ class RecipeDetails extends React.Component {
                             }
                         </ol>
                     </div>
-                    <div className="col-2 justify-content-center">
-                        <h3 className="text-center">Result</h3>
-                        <img src={this.props.img} height="200" width="200"></img>
+                    <div className="col-md-2 col-sm-12 text-center">
+                        <h3>Result</h3>
+                        <div className="d-flex justify-content-center">
+                            <img src={this.props.img} height="200" width="200"></img>
+                        </div>
                     </div>
                 </div>
             </div>
