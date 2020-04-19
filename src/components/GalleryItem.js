@@ -2,16 +2,18 @@ import React from 'react';
 import '../App.css';
 import { CapitalisedTitle, RecipeDetails } from '../components';
 import { Modal } from 'react-bootstrap';
+import { ingredients } from '../constants';
 
 class GalleryItem extends React.Component {
     constructor() {
         super();
         this.state = {
             show: false,
+            isSectioned: false,
             recipeTitle: "",
             recipeImage: "",
             ingredients: [],
-            method: []
+            method: [],
         };
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -24,7 +26,12 @@ class GalleryItem extends React.Component {
             recipeImage: bakingObject.image,
             ingredients: bakingObject.ingredients,
             method: bakingObject.method
-        });
+        })
+        if(bakingObject.sectioned) {
+            this.setState({
+                isSectioned: true,
+            }); 
+        } 
     };
 
     handleCloseModal() {
@@ -60,6 +67,7 @@ class GalleryItem extends React.Component {
                             img={this.state.recipeImage}
                             ingredients={this.state.ingredients}
                             method={this.state.method}
+                            isSectioned={this.state.isSectioned}
                         />
                     </Modal.Body>
                 </Modal>
