@@ -10,6 +10,7 @@
 - [ ] millionaire short bread
 - [ ] NY style cheesecake
 - [x] Peanut butter and chocolate chip cookies
+- [ ] Salted Caramel Apple Pie
 
 ### Cooking recipes
 - [ ] Salmon with Red Cabbage and Mash
@@ -39,4 +40,4 @@
 - [ ] Handle multiple images per entry (only one on home page to start, maybe flickable after)
 - [x] Handle adding method to recipes
 - [x] Display recipe details
-- [ ] Nav bar to home page
+- [x] Nav bar to home page
