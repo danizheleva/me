@@ -25,13 +25,9 @@ class GalleryItem extends React.Component {
             recipeTitle: bakingObject.title,
             recipeImage: bakingObject.image,
             ingredients: bakingObject.ingredients,
-            method: bakingObject.method
+            method: bakingObject.method,
+            isSectioned: bakingObject.isSectioned
         })
-        if(bakingObject.sectioned) {
-            this.setState({
-                isSectioned: true,
-            }); 
-        } 
     };
 
     handleCloseModal() {

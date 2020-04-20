@@ -88,6 +88,6 @@ export default {
         ingredients: INGREDIENTS,
         method: METHOD,
         image: pic1,
-        sectioned: true
+        isSectioned: true
     }
 }

@@ -1,27 +1,31 @@
-import {measurements, ingredients } from '../../constants';
+import { measurements, ingredients } from '../../constants';
 import pic1 from '../../images/baking/peanut_butter_cookies.jpg';
 
 const INGREDIENTS = [
     {
-        ingredient: ingredients.EGG,
-        quantity: 1,
-        measurement: measurements.IETM 
-    },{
-        ingredient: ingredients.PLAIN_FLOUR,
-        quantity: 180,
-        measurement: measurements.GRAM 
-    },{
-        ingredient: ingredients.SUGAR_BROWN,
-        quantity: 100,
-        measurement: measurements.GRAM 
-    },{
-        ingredient: ingredients.CHOCOLATE_70,
-        quantity: 70,
-        measurement: measurements.GRAM 
-    }, {
-        ingredient: ingredients.BUTTER_PEANUT,
-        quantity: 95,
-        measurement: measurements.GRAM 
+        sectionName: "All",
+        ingredients: [
+            {
+                name: ingredients.EGG,
+                quantity: 1,
+                measurement: measurements.IETM
+            }, {
+                name: ingredients.PLAIN_FLOUR,
+                quantity: 180,
+                measurement: measurements.GRAM
+            }, {
+                name: ingredients.SUGAR_BROWN,
+                quantity: 100,
+                measurement: measurements.GRAM
+            }, {
+                name: ingredients.CHOCOLATE_70,
+                quantity: 70,
+                measurement: measurements.GRAM
+            }, {
+                name: ingredients.BUTTER_PEANUT,
+                quantity: 95,
+                measurement: measurements.GRAM
+            }]
     }
 ]
 
@@ -38,13 +42,13 @@ const METHOD = [
     }, {
         step: 4,
         description: "Weigh out roughly equal amounts of the mixture (mine ranged between 20-25g) and use your hands " +
-        "to shape each into a round ball which fits in the palm of your hand. If you have time, leave them in the fridge " +
-        "around 10 minutes. Flatten the ball and create the design on top of each cookie by gently pressing the back of a fork" + 
-        "into each cookie twice, as if making a plus sign with the fork."
+            "to shape each into a round ball which fits in the palm of your hand. If you have time, leave them in the fridge " +
+            "around 10 minutes. Flatten the ball and create the design on top of each cookie by gently pressing the back of a fork" +
+            "into each cookie twice, as if making a plus sign with the fork."
     }, {
         step: 5,
         description: "Bake on a baking sheet in a pre-heated oven at 180C for 10 minutes. (While one batch is baking you can chill " +
-        "and shape the next)."
+            "and shape the next)."
     }, {
         step: 6,
         description: "Remove from the oven and let the cookies cool and set on the baking sheet for 10 minutes before moving."
@@ -57,5 +61,6 @@ export default {
         ingredients: INGREDIENTS,
         method: METHOD,
         image: pic1,
+        isSectioned: false
     }
 }

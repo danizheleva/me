@@ -11,33 +11,26 @@ class RecipeDetails extends React.Component {
                 <div className="row justify-content-center mt-3">
                     <div className="col-md-3 col-sm-12 text-center">
                         <h3>Ingredients</h3>
-                        {isSectioned ? (
-                            Object.keys(ingredients).map(section_name => {
-                                return (
-                                    <div>
-                                        <h4>{ingredients[section_name].sectionName}</h4>
-                                        <ul className="list-unstyled">
-                                            {
-                                                ingredients[section_name].ingredients.map(ingredient => {
-                                                    { console.log(ingredient) }
-                                                    return (<li>{ingredient.name.displayName} ({ingredient.quantity}{ingredient.measurement}) </li>)
-                                                })
-                                            }
-                                        </ul>
-                                    </div>
-                                )
-                            })
-                        ) :
-                            (
-                                <ul className="list-unstyled">
-                                    {Object.keys(ingredients).map((key) => {
-                                        return (
-                                            <li>{ingredients[key].ingredient.displayName} ({ingredients[key].quantity} {ingredients[key].measurement}) </li>
-                                        )
-                                    })
+
+                        {Object.keys(ingredients).map(section_name => {
+                            return (
+                                <div>
+                                    {isSectioned ? (
+                                        <h4>{ingredients[section_name].sectionName}</h4>) : null
                                     }
-                                </ul>
-                            )}
+                                    <ul className="list-unstyled">
+                                        {
+                                            ingredients[section_name].ingredients.map(ingredient => {
+                                                { console.log(ingredient) }
+                                                return (<li>{ingredient.name.displayName} ({ingredient.quantity}{ingredient.measurement}) </li>)
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            )
+                        })
+                        }
+
 
                     </div>
                     <div className="col-md-6 col-sm-12">

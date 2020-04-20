@@ -7,7 +7,7 @@
 - [ ] Orange sponge cake balls
 - [ ] Pastel de Natas
 - [x] Bread and Butter pudding
-- [ ] millionaire short bread
+- [ ] millionaire short bread - (sectioned)
 - [ ] NY style cheesecake
 - [x] Peanut butter and chocolate chip cookies
 - [ ] Salted Caramel Apple Pie
@@ -33,6 +33,8 @@
 - [x] Decrease size of pop out detail card and keep background as is on main page
 - [x] Format details pop up nicely
 - [ ] Optimise for mobile size
+- [x] Refactor sectioned/non sectioned code in RecipeDetails.js
+- [ ] Make method handle sections
 
 ### Features
 - [x] How to display details? pop up card or new page? Probably pop up
