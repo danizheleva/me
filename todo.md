@@ -32,7 +32,7 @@
 - [x] Refactor baking page
 - [x] Decrease size of pop out detail card and keep background as is on main page
 - [x] Format details pop up nicely
-- [ ] Optimise for mobile size
+- [ ] Optimise for mobile size (1 or 2 images per row? probs 1)
 - [x] Refactor sectioned/non sectioned code in RecipeDetails.js
 - [ ] Make method handle sections
 

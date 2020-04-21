@@ -35,13 +35,24 @@ class RecipeDetails extends React.Component {
                     </div>
                     <div className="col-md-6 col-sm-12">
                         <h3 className="text-center">Method</h3>
-                        <ol>
-                            {Object.keys(method).map((key) => {
-                                return (
-                                    <li>{method[key].description} </li>
-                                )
-                            })}
-                        </ol>
+
+                        {Object.keys(method).map((section_name) => {
+                            return (
+                                <div>
+                                    {isSectioned ? (
+                                        <h4>{method[section_name].sectionName}</h4>) : null
+                                    }
+                                    <ol>
+                                        {
+                                            method[section_name].steps.map(step => {
+                                                return (<li>{step.description}</li>)
+                                            })
+                                        }
+                                    </ol>
+                                </div>
+                            )
+                        })}
+
                     </div>
                     <div className="col-md-3 col-sm-12 text-center">
                         <h3>Result</h3>
