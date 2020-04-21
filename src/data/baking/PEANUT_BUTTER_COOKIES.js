@@ -31,27 +31,32 @@ const INGREDIENTS = [
 
 const METHOD = [
     {
-        step: 1,
-        description: "Cream the butter and sugar together on medium speed for 3-4 minutes."
-    }, {
-        step: 2,
-        description: "Mix in the egg, then add the peanut butter and mix until combined."
-    }, {
-        step: 3,
-        description: "Sift the flour, and fold it into the liquid mixture. Finally stir in the chunks of chocolate."
-    }, {
-        step: 4,
-        description: "Weigh out roughly equal amounts of the mixture (mine ranged between 20-25g) and use your hands " +
-            "to shape each into a round ball which fits in the palm of your hand. If you have time, leave them in the fridge " +
-            "around 10 minutes. Flatten the ball and create the design on top of each cookie by gently pressing the back of a fork" +
-            "into each cookie twice, as if making a plus sign with the fork."
-    }, {
-        step: 5,
-        description: "Bake on a baking sheet in a pre-heated oven at 180C for 10 minutes. (While one batch is baking you can chill " +
-            "and shape the next)."
-    }, {
-        step: 6,
-        description: "Remove from the oven and let the cookies cool and set on the baking sheet for 10 minutes before moving."
+        sectionName: "All",
+        steps: [
+            {
+                step: 1,
+                description: "Cream the butter and sugar together on medium speed for 3-4 minutes."
+            }, {
+                step: 2,
+                description: "Mix in the egg, then add the peanut butter and mix until combined."
+            }, {
+                step: 3,
+                description: "Sift the flour, and fold it into the liquid mixture. Finally stir in the chunks of chocolate."
+            }, {
+                step: 4,
+                description: "Weigh out roughly equal amounts of the mixture (mine ranged between 20-25g) and use your hands " +
+                    "to shape each into a round ball which fits in the palm of your hand. If you have time, leave them in the fridge " +
+                    "around 10 minutes. Flatten the ball and create the design on top of each cookie by gently pressing the back of a fork" +
+                    "into each cookie twice, as if making a plus sign with the fork."
+            }, {
+                step: 5,
+                description: "Bake on a baking sheet in a pre-heated oven at 180C for 10 minutes. (While one batch is baking you can chill " +
+                    "and shape the next)."
+            }, {
+                step: 6,
+                description: "Remove from the oven and let the cookies cool and set on the baking sheet for 10 minutes before moving."
+            }
+        ]
     }
 ]
 

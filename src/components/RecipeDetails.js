@@ -1,4 +1,5 @@
 import React from 'react';
+import CapitalisedTitle from './CapitalisedTitle';
 
 class RecipeDetails extends React.Component {
     render() {
@@ -16,13 +17,13 @@ class RecipeDetails extends React.Component {
                             return (
                                 <div>
                                     {isSectioned ? (
-                                        <h4>{ingredients[section_name].sectionName}</h4>) : null
+                                        <CapitalisedTitle size={4} title={ingredients[section_name].sectionName} />) : null
                                     }
                                     <ul className="list-unstyled">
                                         {
                                             ingredients[section_name].ingredients.map(ingredient => {
                                                 { console.log(ingredient) }
-                                                return (<li>{ingredient.name.displayName} ({ingredient.quantity}{ingredient.measurement}) </li>)
+                                                return (<li>{ingredient.name.displayName} ({ingredient.quantity} {ingredient.measurement}) </li>)
                                             })
                                         }
                                     </ul>
@@ -40,8 +41,7 @@ class RecipeDetails extends React.Component {
                             return (
                                 <div>
                                     {isSectioned ? (
-                                        <h4>{method[section_name].sectionName}</h4>) : null
-                                    }
+                                        <CapitalisedTitle size={4} title={method[section_name].sectionName} /> ) : null}
                                     <ol>
                                         {
                                             method[section_name].steps.map(step => {

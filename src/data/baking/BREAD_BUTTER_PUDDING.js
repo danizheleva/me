@@ -56,31 +56,36 @@ const INGREDIENTS = [
 
 const METHOD = [
     {
-        step: 1,
-        description: "Soak the raisins in cold tea. Peel and slice the apples and keep them in cold water " +
-            "with a squeeze of lemon to stay fresh"
-    }, {
-        step: 2,
-        description: "Add butter and milk to a saucepan and gently heat until butter has melted. Set aside to cool."
-    }, {
-        step: 3,
-        description: "Whisk the eggs, sugar, cinnamon, nutmeg and vanilla in a bowl until combined. Add in the milk and whisk some more."
-    }, {
-        step: 4,
-        description: "Tear the bread into pieces and throw into a greased bakign dish. Strain the raisins and apples " +
-            "and scatter both on top of the bread. Pour the milk mixture on top and sprinkle with brown sugar"
-    }, {
-        step: 5,
-        description: "Bake for 30 minutes on 200 C"
+        sectionName: "All",
+        steps: [
+            {
+                step: 1,
+                description: "Soak the raisins in cold tea. Peel and slice the apples and keep them in cold water " +
+                    "with a squeeze of lemon to stay fresh"
+            }, {
+                step: 2,
+                description: "Add butter and milk to a saucepan and gently heat until butter has melted. Set aside to cool."
+            }, {
+                step: 3,
+                description: "Whisk the eggs, sugar, cinnamon, nutmeg and vanilla in a bowl until combined. Add in the milk and whisk some more."
+            }, {
+                step: 4,
+                description: "Tear the bread into pieces and throw into a greased bakign dish. Strain the raisins and apples " +
+                    "and scatter both on top of the bread. Pour the milk mixture on top and sprinkle with brown sugar"
+            }, {
+                step: 5,
+                description: "Bake for 30 minutes on 200 C"
+            }
+        ]
     }
 ]
 
 export default {
-    BREAD_PUDDING: {
-        title: "apple bread and butter pudding",
-        ingredients: INGREDIENTS,
-        method: METHOD,
-        image: pic1,
-        isSectioned: false
-    }
-}
+            BREAD_PUDDING: {
+                title: "apple bread and butter pudding",
+                ingredients: INGREDIENTS,
+                method: METHOD,
+                image: pic1,
+                isSectioned: false
+            }
+        }
