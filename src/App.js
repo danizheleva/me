@@ -14,11 +14,12 @@ class App extends Component {
     return (
       <div>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="#home">Dani Zheleva</Navbar.Brand>
+          <Navbar.Brand href="#/">Dani Zheleva</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="#/">Home</Nav.Link>
             <Nav.Link href="#/baking">Baking</Nav.Link>
+            <Nav.Link href="#/cooking">Cooking</Nav.Link>
             <Nav.Link href="#/traveling">Traveling</Nav.Link>
+
           </Nav>
         </Navbar>
 

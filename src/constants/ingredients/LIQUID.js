@@ -16,7 +16,6 @@ export default {
                         ]
                     }
     },
-
     LEMON_JUICE: {
         displayName: "fresh lemon juice",
         nutrition: {    quantity: 1, 
@@ -33,7 +32,6 @@ export default {
                         ]
                     }
     },
-
     SOYA_UNSWEETENED: {
         displayName: "unsweetened soya mill",
         link: "https://www.tesco.com/groceries/en-GB/products/251523947",
@@ -51,5 +49,8 @@ export default {
                             {amount: 0.6,   macro: macros.FIBRE}
                         ]
                     }
+    },
+    WATER: {
+        displayName: "water",
     },
 }

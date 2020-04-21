@@ -3,7 +3,7 @@ import pic1 from '../../images/baking/apple_pie.jpg';
 
 const INGREDIENTS = [
     {
-        sectionName: "Pastry",
+        sectionName: "pastry",
         ingredients: [
             {
                 name: ingredients.PLAIN_FLOUR,
@@ -14,35 +14,85 @@ const INGREDIENTS = [
                 name: ingredients.BUTTER_UNSALTED,
                 quantity: 140,
                 measurement: measurements.GRAM
+            },{
+                name: ingredients.SALT,
+                quantity: 1,
+                measurement: measurements.TEASPOON
+            },{
+                name: ingredients.WATER,
+                quantity: 120,
+                measurement: measurements.MILLILITRE
             }
-            // {
-            //     name: ingredients.SALT,
-            //     quantity: 1,
-            //     measurement: measurements.TEASPOON
-            // },
         ]
     },{
-        sectionName: "Caramel",
+        sectionName: "salted caramel",
         ingredients: [
             {
                 name: ingredients.SUGAR_WHITE,
                 quantity: 200,
                 measurement: measurements.GRAM
             },{
-                name: ingredients.BUTTER_UNSALTED,
+                name: ingredients.BUTTER_SALTED,
                 quantity: 90,
                 measurement: measurements.GRAM
+            },{
+                name: ingredients.CREAM_HEAVY,
+                quantity: 120,
+                measurement: measurements.MILLILITRE
+            },{
+                name: ingredients.SALT,
+                quantity: 1,
+                measurement: measurements.TEASPOON
             },
-            // {
-            //     name: ingredients.HEAVY_CREAM,
-            //     quantity: 120,
-            //     measurement: measurements.MILLILITRE
-            // },
-            // {
-            //     name: ingredients.SALT,
-            //     quantity: 1,
-            //     measurement: measurements.TEASPOON
-            // },
+        ]
+    },{
+        sectionName: "pie filling",
+        ingredients: [
+            {
+                name: ingredients.APPLE,
+                quantity: 6,
+                measurement: measurements.IETM
+            },
+            {
+                name: ingredients.LEMON_JUICE,
+                quantity: 30,
+                measurement: measurements.MILLILITRE
+            },
+            {
+                name: ingredients.SUGAR_WHITE,
+                quantity: 100,
+                measurement: measurements.GRAM
+            },
+            {
+                name: ingredients.PLAIN_FLOUR,
+                quantity: 30,
+                measurement: measurements.GRAM
+            },
+            {
+                name: ingredients.CINNAMON,
+                quantity: 1.5,
+                measurement: measurements.TEASPOON
+            },
+            {
+                name: ingredients.NUTMEG,
+                quantity: 0.25,
+                measurement: measurements.TEASPOON
+            },
+            {
+                name: ingredients.CLOVES_GROUND,
+                quantity: 0.25,
+                measurement: measurements.TEASPOON
+            },
+            {
+                name: ingredients.EGG,
+                quantity: 1,
+                measurement: measurements.IETM
+            },
+            {
+                name: ingredients.SUGAR_BROWN,
+                quantity: 10,
+                measurement: measurements.GRAM
+            }
         ]
     }
 ]

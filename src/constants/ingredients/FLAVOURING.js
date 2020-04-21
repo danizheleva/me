@@ -4,5 +4,8 @@ import macros from '../macros.js';
 export default{
     VANILLA: {
         displayName: "Vanilla"
+    },
+    SALT: {
+        displayName: "salt"
     }
 }

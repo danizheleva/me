@@ -10,7 +10,7 @@
 - [ ] millionaire short bread - (sectioned)
 - [ ] NY style cheesecake
 - [x] Peanut butter and chocolate chip cookies
-- [ ] Salted Caramel Apple Pie
+- [x] Salted Caramel Apple Pie
 
 ### Cooking recipes
 - [ ] Salmon with Red Cabbage and Mash

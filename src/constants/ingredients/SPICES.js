@@ -38,6 +38,24 @@ export default {
                         ]
                     }
     },
+    CLOVES_GROUND: {
+        displayName: "ground cloves",
+        link: "https://www.tesco.com/groceries/en-GB/products/287841498",
+        nutrition: {    quantity: 0.5, 
+                        measurement: measurements.TEASPOON, 
+                        macronutrients: [
+                            {amount: 79,    macro: macros.ENERGY},
+                            {amount: 20,    macro: macros.CALORIES},
+                            {amount: 1.4,   macro: macros.CARBS},
+                            {amount: 0.3,   macro: macros.PROTEIN},
+                            {amount: 1.0,   macro: macros.FATS},
+                            {amount: 0.3,   macro: macros.SATURATES},
+                            {amount: 0.1,   macro: macros.SUGARS},
+                            {amount: 0.1,   macro: macros.SALT},
+                            {amount: 1.7,   macro: macros.FIBRE}
+                        ]
+                    }
+    },
 
     
 }
