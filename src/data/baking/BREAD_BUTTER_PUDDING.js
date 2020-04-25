@@ -81,11 +81,11 @@ const METHOD = [
 ]
 
 export default {
-            BREAD_PUDDING: {
-                title: "apple bread and butter pudding",
-                ingredients: INGREDIENTS,
-                method: METHOD,
-                image: pic1,
-                isSectioned: false
-            }
-        }
+    BREAD_PUDDING: {
+        title: "apple bread and butter pudding",
+        ingredients: INGREDIENTS,
+        method: METHOD,
+        image: pic1,
+        isSectioned: false
+    }
+}
