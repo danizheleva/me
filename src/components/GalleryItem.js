@@ -38,7 +38,7 @@ class GalleryItem extends React.Component {
         const { details } = this.props;
 
         return (
-            <div className="col-4 gallery-item img-responsive">
+            <div className="md-col-4 gallery-item img-responsive">
                 <div onClick={() => this.handleOpenModal(details)}>
                     <img className="gallery-image" src={details.image} />
                     <div class="gallery-item-info">
